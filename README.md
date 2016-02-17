@@ -5,6 +5,6 @@ FindMyPhone is a simple Android Application that lets the user locate his/her ph
 #Features
 
 1. Set Command 
-2. Mainatin Black List
+2. Maintain Black List
 3. Maintain Emergency List
 4. Set Password
