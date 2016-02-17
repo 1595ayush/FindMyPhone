@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/e"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/passcode"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/pass1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/passcode"
+        android:layout_marginLeft="80dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/circle2" />
+
+    <TextView
+        android:id="@+id/pass2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/passcode"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dip"
+        android:layout_toRightOf="@id/pass1"
+        android:background="@drawable/circle2" />
+
+    <TextView
+        android:id="@+id/pass3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/passcode"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dip"
+        android:layout_toRightOf="@id/pass2"
+        android:background="@drawable/circle2" />
+
+    <TextView
+        android:id="@+id/pass4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/passcode"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dip"
+        android:layout_toRightOf="@id/pass3"
+        android:background="@drawable/circle2" />
+
+    <TextView
+        android:id="@+id/zero_tv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/zero"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/eight_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/zero_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/eight"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/seven_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/zero_tv"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/eight_tv"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/seven"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/five_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/seven_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/five"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/four_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/seven_tv"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/five_tv"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/four"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/two_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/four_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/two"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/one_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/four_tv"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dip"
+        android:layout_toLeftOf="@id/two_tv"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/one"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/three_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/four_tv"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/two_tv"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/three"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/six_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/seven_tv"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/five_tv"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/six"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/nine_tv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@id/zero_tv"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/eight_tv"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:onClick="password"
+        android:text="@string/nine"
+        android:textSize="40dp" />
+
+</RelativeLayout>

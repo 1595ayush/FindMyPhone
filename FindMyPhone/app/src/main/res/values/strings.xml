@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FindMyPhone</string>
+    <string name="add_comm">Add Command</string>
+    <string name="set_comm">Set Command</string>
+    <string name="ent_comm">Enter Command: </string>
+    <string name="bw_list">Black/White List</string>
+    <string name="comm">Your phone will ring when the following command is received via SMS.</string>
+    <string name="emergency_cont">Emergency Contacts</string>
+    <string name="entcont">Select Contacts: </string>
+    <string name="set_pwd">Set Password</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_command">CommandActivity</string>
+    <string name="title_activity_password">PasswordActivity</string>
+    <string name="emercont">The phone will always ring if the following contacts call no matter which profile you are in.</string>
+    <string name="title_activity_emergency_contact">EmergencyContactActivity</string>
+    <string name="title_activity_bwlist">BWListActivity</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="passcode">Passcode</string>
+    <string name="set_password">Set password!</string>
+</resources>
