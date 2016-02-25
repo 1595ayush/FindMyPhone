@@ -20,12 +20,12 @@
         android:text="Select contacts"
         android:onClick="opencontacts"
         />
-    <Button
-        android:id="@+id/submit"
+
+    <ListView
+        android:layout_below="@id/select_contacts_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/select_contacts_btn"
-        android:layout_marginTop="20px"
-        android:text="Submit"
-        />
+        android:id="@+id/lv">
+
+    </ListView>
 </RelativeLayout>

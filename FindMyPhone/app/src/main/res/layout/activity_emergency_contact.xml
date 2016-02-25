@@ -23,7 +23,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/entcont_tv"
-        android:text="Pick Contact" />
+        android:text="Pick Contact"
+        android:onClick="openContacts"/>
+    <ListView
+        android:layout_below="@id/pickcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv1">
+    </ListView>
 
 
 </RelativeLayout>

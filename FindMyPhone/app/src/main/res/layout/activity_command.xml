@@ -28,6 +28,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/comm_edt"
         android:text="@string/set_comm"
-        android:onClick="setCommand"
+        android:id="@+id/btn_set"
         />
 </RelativeLayout>

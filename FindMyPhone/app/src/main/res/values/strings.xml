@@ -28,4 +28,15 @@
     <string name="nine">9</string>
     <string name="passcode">Passcode</string>
     <string name="set_password">Set password!</string>
+    <string name="title_activity_alarm_ringer">AlarmRinger</string>
+    <string name="default_keyword">RingMyDroid</string>
+    <string name="enterkeyword">Enter your Key Phrase</string>
+    <string name="click_stop_alarm">Click the button below to stop the alarm.</string>
+    <string name="found_phone">Found Phone!</string>
+    <string name="set_keyphrase">Set your Key Phrase</string>
+    <string name="set">Set</string>
+    <string name="enablepass">Enable password</string>
+    <string name="enterpass">enter password</string>
+    <string name="re_enter_password">re-enter password</string>
+
 </resources>

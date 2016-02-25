@@ -1,6 +1,8 @@
 package com.se.findmyphone;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -12,14 +14,23 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
-    int counter = 0;
+    int counter = 0,i=2;
     String passcode = "";
     TextView pass1, pass2, pass3, pass4;
-
+    SharedPreferences settings;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        settings = getSharedPreferences("KeywordStorage", 0);
+        boolean check = settings.getBoolean("checked",false);
+        System.out.println("check=" +check );
+        if(check)
         setContentView(R.layout.activity_main);
+        else
+        {
+            Intent intent = new Intent(MainActivity.this,HomeActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override
@@ -38,7 +49,6 @@ public class MainActivity extends ActionBarActivity {
         pass4 = (TextView) findViewById(R.id.pass4);
         if (counter <= 4) {
             passcode = passcode + text;
-            Toast.makeText(MainActivity.this, passcode, Toast.LENGTH_SHORT).show();
             counter++;
             if (counter == 1)
                 pass1.setBackgroundResource(R.drawable.circle3);
@@ -49,10 +59,10 @@ public class MainActivity extends ActionBarActivity {
             else if (counter == 4)
                 pass4.setBackgroundResource(R.drawable.circle3);
             if (counter == 4) {
-                if (passcode.equals("1234")) {
-                    Intent i = new Intent(MainActivity.this,HomeActivity.class);
+                String passSP =  settings.getString("pass","");
+                if (passcode.equals(passSP)) {
+                    Intent i = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(i);
-                    Toast.makeText(MainActivity.this, "Wohoo", Toast.LENGTH_SHORT).show();
                 } else {
                     passcode = "";
                     counter = 0;
@@ -63,8 +73,8 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
         }
-
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
