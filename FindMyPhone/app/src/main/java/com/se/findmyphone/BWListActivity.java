@@ -131,7 +131,7 @@ public class BWListActivity extends ActionBarActivity {
 
                     }
                     phones.close();
-                    if (db.searchBL(number)) {
+                    if (db.searchBL(number)&&db.searchEmer(number)) {
 
                         db.insertBL(name, number);
                         all.add(new ContactList(name, number));

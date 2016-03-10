@@ -146,7 +146,7 @@ public class EmergencyContactActivity extends ActionBarActivity {
 
                     }
                     phones.close();
-                    if (db.searchEmer(number)) {
+                    if (db.searchBL(number)&&db.searchEmer(number)) {
 
                         db.insertEmer(name, number);
                         all.add(new ContactList(name, number));
