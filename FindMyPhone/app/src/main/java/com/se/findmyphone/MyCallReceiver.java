@@ -23,6 +23,7 @@ public class MyCallReceiver extends BroadcastReceiver {
             if(!db.searchEmer(incomingNumber) && profileCheck.getRingerMode() != AudioManager.RINGER_MODE_NORMAL) {
                 Intent i = new Intent(context, AlarmRinger.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                i.putExtra("type",1);
                 context.startActivity(i);
             }
         }

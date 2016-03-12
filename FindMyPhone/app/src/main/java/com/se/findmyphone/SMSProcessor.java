@@ -36,6 +36,7 @@ public class SMSProcessor extends Activity
             //Start new activity to play sound.
             Intent i = new Intent();
             i.setClass(SMSProcessor.this, AlarmRinger.class);
+            i.putExtra("type",0);
             startActivity(i);
         }
 

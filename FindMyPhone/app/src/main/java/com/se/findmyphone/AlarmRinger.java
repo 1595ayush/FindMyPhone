@@ -1,6 +1,7 @@
 package com.se.findmyphone;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -26,7 +27,9 @@ public class AlarmRinger extends Activity
 
         setContentView(R.layout.alarm_ringer);
         soundButton = (Button)findViewById(R.id.btn_found);
-
+        Intent intent= getIntent();
+        if(intent.getIntExtra("type",0)==1)
+            soundButton.setText("STOP ALARM");
         //Set the media volume to maximum and store current volume so that i can be restored on button click.
         final AudioManager mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
         final int originalVolume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);

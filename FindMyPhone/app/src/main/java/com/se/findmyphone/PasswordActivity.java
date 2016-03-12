@@ -54,6 +54,8 @@ public class PasswordActivity extends ActionBarActivity {
             editor.putBoolean("checked", true); //Open the string with the key/name - "KeyWord". If it doesn't exist, create it. Put the value of the variable "keyword" in it.
             editor.putString("pass", passVal1);
             editor.commit();
+            Toast.makeText(PasswordActivity.this,"Password set.",Toast.LENGTH_SHORT).show();
+
         }
         else if(passVal1.length()!=4 || passVal2.length()!=4 )
         {
