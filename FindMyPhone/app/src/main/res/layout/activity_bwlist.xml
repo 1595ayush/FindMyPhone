@@ -4,6 +4,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/e"
     tools:context="com.se.findmyphone.BWListActivity">
     <TextView
         android:layout_width="wrap_content"
@@ -13,10 +14,12 @@
         />
     <Button
         android:id="@+id/select_contacts_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
         android:layout_height="wrap_content"
         android:layout_below="@id/messageforcontacts_tv"
         android:layout_marginTop="20px"
+        android:textColor="#000000"
         android:text="Select contacts"
         android:onClick="opencontacts"
         />

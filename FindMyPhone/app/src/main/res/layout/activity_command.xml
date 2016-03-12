@@ -4,6 +4,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/e"
     tools:context="com.se.findmyphone.CommandActivity">
     <TextView
         android:id="@+id/exp_tv"
@@ -26,8 +27,10 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:layout_below="@id/comm_edt"
         android:text="@string/set_comm"
+        android:textColor="#000000"
         android:id="@+id/btn_set"
         />
 </RelativeLayout>
