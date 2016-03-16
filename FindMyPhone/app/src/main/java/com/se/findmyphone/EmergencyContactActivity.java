@@ -41,8 +41,9 @@ public class EmergencyContactActivity extends ActionBarActivity {
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                conName = ((TextView) findViewById(R.id.name)).getText().toString();
-                conNo = ((TextView) findViewById(R.id.no)).getText().toString();
+                ContactList contactList = (ContactList) myAdapter.getItem(position);
+                conName = contactList.getName();
+                conNo = contactList.getNo();
                 db.deleteEmer(conName, conNo);
                 all.remove(position);
                 myAdapter.notifyDataSetChanged();
@@ -152,8 +153,11 @@ public class EmergencyContactActivity extends ActionBarActivity {
                         all.add(new ContactList(name, number));
                         myAdapter.notifyDataSetChanged();
                     }
+
+                    else if(db.searchBL(number))
+                        Toast.makeText(this, name +" "+ number+" already exists.", Toast.LENGTH_LONG).show();
                     else
-                        Toast.makeText(this, name + " " + number + " already exists.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(this, name +" "+ number+" exists in Black List.", Toast.LENGTH_LONG).show();
                 }
             }
     }

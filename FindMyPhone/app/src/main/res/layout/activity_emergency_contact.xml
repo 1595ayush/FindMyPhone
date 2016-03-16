@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/entcont"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/expl_tv"
         android:id="@+id/entcont_tv"/>
     <Button
@@ -28,17 +28,20 @@
         android:textColor="#000000"
         android:background="@drawable/button"
         android:onClick="openContacts"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:text="*long tap on contact to delete*"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
     <ListView
         android:layout_below="@id/pickcontact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lv1">
+        android:id="@+id/lv1"
+        android:layout_above="@id/label">
     </ListView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*long tap on contact to delete*"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>

@@ -7,10 +7,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/name"
         android:layout_marginRight="20dp"
+        android:textSize="15dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/no"
+        android:textSize="15dp"
         />
 </LinearLayout>

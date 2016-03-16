@@ -23,19 +23,21 @@
         android:text="Select contacts"
         android:onClick="opencontacts"
         />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label1"
+        android:text="*long tap on contact to delete*"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
     <ListView
         android:layout_below="@id/select_contacts_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/label1"
         android:id="@+id/lv">
 
     </ListView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*long tap on contact to delete*"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

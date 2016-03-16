@@ -42,8 +42,9 @@ public class BWListActivity extends ActionBarActivity {
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                conName = ((TextView) findViewById(R.id.name)).getText().toString();
-                conNo = ((TextView) findViewById(R.id.no)).getText().toString();
+                ContactList contactList = (ContactList) myAdapter.getItem(position);
+                conName = contactList.getName();
+                conNo = contactList.getNo();
                 db.deleteBL(conName, conNo);
                 all.remove(position);
                 myAdapter.notifyDataSetChanged();
@@ -137,8 +138,10 @@ public class BWListActivity extends ActionBarActivity {
                         all.add(new ContactList(name, number));
                         myAdapter.notifyDataSetChanged();
                     }
-                    else
+                    else if(db.searchEmer(number))
                         Toast.makeText(this, name +" "+ number+" already exists.", Toast.LENGTH_LONG).show();
+                    else
+                        Toast.makeText(this, name +" "+ number+" exists in Emergency List.", Toast.LENGTH_LONG).show();
                 }
             }
     }

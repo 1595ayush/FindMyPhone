@@ -3,7 +3,7 @@
     <string name="add_comm">Add Command</string>
     <string name="set_comm">Set Command</string>
     <string name="ent_comm">Enter Command: </string>
-    <string name="bw_list">Black/White List</string>
+    <string name="bw_list">Black List</string>
     <string name="comm">Your phone will ring when the following command is received via SMS.</string>
     <string name="emergency_cont">Emergency Contacts</string>
     <string name="entcont">Select Contacts: </string>
