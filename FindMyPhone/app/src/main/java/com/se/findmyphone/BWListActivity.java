@@ -34,6 +34,7 @@ public class BWListActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bwlist);
+        setTitle("FindMyPhone");
         listView = (ListView) findViewById(R.id.lv);
         db = new DbHelper(this);
         all = db.getBList();
@@ -103,7 +104,7 @@ public class BWListActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_bwlist, menu);
+        //getMenuInflater().inflate(R.menu.menu_bwlist, menu);
         return true;
     }
     public void opencontacts(View v)

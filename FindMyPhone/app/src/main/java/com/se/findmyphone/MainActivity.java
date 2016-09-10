@@ -24,14 +24,18 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         settings = getSharedPreferences("KeywordStorage", 0);
         boolean check = settings.getBoolean("checked",false);
         System.out.println("check=" +check );
         if(check)
-        setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_main);
         else
         {
             Intent intent = new Intent(MainActivity.this,HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
         }
     }
