@@ -33,7 +33,7 @@ public class EmergencyContactActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency_contact);
-        setTitle("FindMyPhone");
+        setTitle("Emergency Contacts");
         listView = (ListView) findViewById(R.id.lv1);
         db = new DbHelper(this);
         all = db.getEList();

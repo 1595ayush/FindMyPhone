@@ -21,7 +21,7 @@ public class PasswordActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
-        setTitle("FindMyPhone");
+        setTitle("Password");
         pass1=(EditText)findViewById(R.id.pass1_edt);
         pass2=(EditText)findViewById(R.id.pass2_edt);
         CheckBox cb = (CheckBox) findViewById (R.id.enable_ckbx);

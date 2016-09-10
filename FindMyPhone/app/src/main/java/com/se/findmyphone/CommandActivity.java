@@ -24,7 +24,7 @@ public class CommandActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_command);
-        setTitle("FindMyPhone");
+        setTitle("Command");
         comm = (TextView) findViewById(R.id.comm_edt);
         et_keyword = (EditText) findViewById(R.id.comm_edt);
         setCommand = (Button) findViewById(R.id.btn_set);

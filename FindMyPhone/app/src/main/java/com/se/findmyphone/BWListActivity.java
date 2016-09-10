@@ -34,7 +34,7 @@ public class BWListActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bwlist);
-        setTitle("FindMyPhone");
+        setTitle("BlackList");
         listView = (ListView) findViewById(R.id.lv);
         db = new DbHelper(this);
         all = db.getBList();
